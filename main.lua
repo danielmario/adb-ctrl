@@ -14,7 +14,7 @@ my = {
 function love.load()
   local font = love.graphics.newFont(32)
   love.graphics.setFont(font)
-  my.image = love.graphics.newImage('blank.png')
+  my.image = love.graphics.newImage(love.image.newImageData(450,768))
   my.shell = io.popen('cat >> commands', 'w')
 end
 
