@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+while true; do
+	adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > /tmp/screen2.png
+	mv /tmp/screen2.png /tmp/screen.png
+done

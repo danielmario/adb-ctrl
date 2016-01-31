@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+cat commands | xargs -l adb shell
